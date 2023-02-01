@@ -2,7 +2,10 @@ const sreachBtn = document.getElementById("search-btn");
 const mealList = document.getElementById("meal");
 const mealDetailsContent = document.querySelector(".meal-deatils-content");
 const recipeCloseBtn = document.getElementById("recipe-close-btn");
+const searchBar = document.getElementById('sreach-input')
 
+
+searchBar.addEventListener('keyup', getMealList);
 sreachBtn.addEventListener("click", getMealList);
 mealList.addEventListener('click', getMealRecipe);
 
